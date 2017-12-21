@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Consolas:size=14"
+	"Monaco:size=10"
 };
-static const char dmenufont[]       = "Consolas:size=14";
+static const char dmenufont[]       = "Monaco:size=10";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#fdf6e3";
 static const char normfgcolor[]     = "#333333"; //"#93a1a1";
