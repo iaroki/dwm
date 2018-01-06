@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm -v /home/max/dev/dwm/slstatus:/src dwmbuild
+docker run --rm -v $PWD:/src dwmbuild
 mv -v bin/* ~/bin/
 rmdir -v bin
 echo "DONE!"
