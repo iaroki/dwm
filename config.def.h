@@ -6,11 +6,11 @@ static const char *fonts[] = {
 };
 static const char dmenufont[]       = "Monaco:size=12";
 static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#fdf6e3";
-static const char normfgcolor[]     = "#333333"; //"#93a1a1";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#fdf6e3";
-static const char selfgcolor[]      = "#268bd2";
+static const char normbgcolor[]     = "#282828"; //gruvbox medium
+static const char normfgcolor[]     = "#ebdbb2"; 
+static const char selbordercolor[]  = "#444444";
+static const char selbgcolor[]      = "#282828";
+static const char selfgcolor[]      = "#fabd2f";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
