@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Monaco:size=13"
+	"Monaco:size=11"
 };
-static const char dmenufont[]       = "Monaco:size=13";
+static const char dmenufont[]       = "Monaco:size=11";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#282828"; //gruvbox medium
 static const char normfgcolor[]     = "#ebdbb2"; 
