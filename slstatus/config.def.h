@@ -54,6 +54,7 @@ static const struct arg args[] = {
 //	{ cpu_perc,     "[CPU: %3s%%] ",    NULL                },
 	{ ram_used,     " %sM   ",      NULL                },   // old: 
     { disk_perc,    " %s%%   ",     "/"                 },
+    { disk_perc,    " %s%%   ",     "/home"             },
     { battery_perc, " %s%%   ",     "BAT1"              },
 //    { wifi_essid,   "[WIFI: %s] ",      "wlp1s0"            },
 	{ datetime,     "%s",           " %A %d %B    %H:%M"   },
