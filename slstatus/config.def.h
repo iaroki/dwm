@@ -52,10 +52,10 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 //	{ cpu_perc,     "[CPU: %3s%%] ",    NULL                },
-	{ ram_used,     " %sM   ",      NULL                },   // old: 
-    { disk_perc,    " %s%%   ",     "/"                 },
-    { disk_perc,    " %s%%   ",     "/home"             },
-    { battery_perc, " %s%%   ",     "BAT1"              },
+	{ ram_used,     " %sM  ",      NULL                },   // old: 
+    { disk_perc,    " %s%%  ",     "/"                 },
+    { disk_perc,    " %s%%  ",     "/home"             },
+    { battery_perc, " %s%%  ",     "BAT1"              },
 //    { wifi_essid,   "[WIFI: %s] ",      "wlp1s0"            },
-	{ datetime,     "%s",           " %A %d %B    %H:%M"   },
+	{ datetime,     "%s",           " %A %d %B   %H:%M"   },
 };
