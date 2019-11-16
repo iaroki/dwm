@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Monaco:size=11"
+	"Fira Mono:size=12"
 };
-static const char dmenufont[]       = "Monaco:size=11";
+static const char dmenufont[]       = "Fira Mono:size=12";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#282828"; //gruvbox medium
 static const char normfgcolor[]     = "#ebdbb2"; 
@@ -21,9 +21,9 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+//static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 //static const char *tags[] = { "sys", "fm", "web", "im", "doc", "lxc", "dkr", "ssh", "misc" };
-//static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -62,8 +62,8 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *fmcmd[] = { "thunar", NULL };
+static const char *termcmd[]  = { "term.sh", NULL };
+static const char *fmcmd[] = { "fm.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -71,7 +71,7 @@ static Key keys[] = {
 	{ MODALTKEY,                    XK_F2,     spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODALTKEY,                    XK_F1,     spawn,          {.v = termcmd } },
-    { MODALTKEY,                    XK_F3,     spawn,          {.v = fmcmd } },
+        { MODALTKEY,                    XK_F3,     spawn,          {.v = fmcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODALTKEY,                    XK_Tab,    focusstack,     {.i = +1 } },
@@ -104,7 +104,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-    TAGKEYS(                        XK_0,                      9)
+        TAGKEYS(                        XK_0,                      9)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
