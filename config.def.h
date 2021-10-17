@@ -4,10 +4,10 @@
 static const char *fonts[] = {
 	"Fira Mono:size=12"
 };
-static const char dmenufont[]       = "Fira Mono:size=12";
+static const char dmenufont[]       = "Fira Mono:size=18";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#282828"; //gruvbox medium
-static const char normfgcolor[]     = "#ebdbb2"; 
+static const char normfgcolor[]     = "#ebdbb2";
 static const char selbordercolor[]  = "#444444";
 static const char selbgcolor[]      = "#282828";
 static const char selfgcolor[]      = "#fabd2f";
