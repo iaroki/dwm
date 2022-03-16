@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "term", "web", "code", "media", "misc" };
+static const char *tags[] = { "web", "local", "remote", "code", "misc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -119,4 +119,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
