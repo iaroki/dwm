@@ -73,7 +73,17 @@
 
 /* enums */
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
-enum { SchemeNorm, SchemeSel }; /* color schemes */
+enum {
+	SchemeNorm,
+	SchemeSel,
+	SchemeTitleNorm,
+	SchemeTitleSel,
+	SchemeTagsNorm,
+	SchemeTagsSel,
+	SchemeHidNorm,
+	SchemeHidSel,
+	SchemeUrg,
+}; /* color schemes */
 enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
        NetSystemTray, NetSystemTrayOP, NetSystemTrayOrientation, NetSystemTrayOrientationHorz,
        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
@@ -1871,7 +1881,7 @@ setup(void)
 	/* init appearance */
 	scheme = ecalloc(LENGTH(colors), sizeof(Clr *));
 	for (i = 0; i < LENGTH(colors); i++)
-		scheme[i] = drw_scm_create(drw, colors[i], 3);
+		scheme[i] = drw_scm_create(drw, colors[i], ColCount);
 	/* init system tray */
 	updatesystray();
 	/* init bars */
@@ -1899,7 +1909,6 @@ setup(void)
 	grabkeys();
 	focus(NULL);
 }
-
 
 void
 seturgent(Client *c, int urg)
@@ -2345,7 +2354,6 @@ updatestatus(void)
 	drawbar(selmon);
 	updatesystray();
 }
-
 
 void
 updatesystrayicongeom(Client *i, int w, int h)
