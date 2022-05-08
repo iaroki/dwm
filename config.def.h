@@ -13,6 +13,9 @@ static const int topbar             = 1;     /* 0 means bottom bar */
 static const char *fonts[]          = { "FiraCode Nerd Font:size=10" };
 static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
 
+// Media keys
+#include <X11/XF86keysym.h>
+
 // theme
 #include "themes/gruvbox.h"
 
@@ -74,6 +77,11 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *roficmd[]  = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+// Media keys
+static const char *volup[]   = { "vol_up.sh", NULL };
+static const char *voldown[] = { "vol_down.sh", NULL };
+static const char *volmute[] = { "vol_mute.sh", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -111,6 +119,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volup   } },
+  { 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldown } },
+	{ 0,                            XF86XK_AudioMute,        spawn, {.v = volmute } },
 };
 
 /* button definitions */
