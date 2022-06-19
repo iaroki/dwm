@@ -17,7 +17,7 @@ static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
 #include <X11/XF86keysym.h>
 
 // theme
-#include "themes/gruvbox.h"
+#include "themes/kanagawa.h"
 
 static char *colors[][ColCount] = {
 	/*                       fg                bg                border                float */
