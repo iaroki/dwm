@@ -6,7 +6,7 @@ static char normbordercolor[]            = "#090618";
 static char normfloatcolor[]             = "#1f1f28";
 
 static char selfgcolor[]                 = "#dcd7ba";
-static char selbgcolor[]                 = "#223249";
+static char selbgcolor[]                 = "#1f1f28";
 static char selbordercolor[]             = "#090618";
 static char selfloatcolor[]              = "#223249";
 
