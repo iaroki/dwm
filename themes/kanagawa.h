@@ -1,12 +1,12 @@
 static char c000000[]                    = "#bc7ad9"; // placeholder value
 
 static char normfgcolor[]                = "#dcd7ba";
-static char normbgcolor[]                = "#1f1f28";
+static char normbgcolor[]                = "#16161d";
 static char normbordercolor[]            = "#090618";
-static char normfloatcolor[]             = "#1f1f28";
+static char normfloatcolor[]             = "#16161d";
 
 static char selfgcolor[]                 = "#dcd7ba";
-static char selbgcolor[]                 = "#1f1f28";
+static char selbgcolor[]                 = "#16161d";
 static char selbordercolor[]             = "#090618";
 static char selfloatcolor[]              = "#223249";
 
