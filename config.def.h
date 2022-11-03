@@ -14,7 +14,7 @@ static const char *fonts[]          = { "FiraCode Nerd Font:size=10" };
 static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
 
 // Media keys
-#include <x11/xf86keysym.h>
+#include <X11/XF86keysym.h>
 
 // theme
 #include "themes/kanagawa.h"
