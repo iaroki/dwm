@@ -14,7 +14,7 @@ static const char *fonts[]          = { "FiraCode Nerd Font:size=10" };
 static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
 
 // Media keys
-#include <X11/XF86keysym.h>
+#include <x11/xf86keysym.h>
 
 // theme
 #include "themes/kanagawa.h"
@@ -83,6 +83,10 @@ static const char *volup[]   = { "vol_up.sh", NULL };
 static const char *voldown[] = { "vol_down.sh", NULL };
 static const char *volmute[] = { "vol_mute.sh", NULL };
 
+// Brightness keys
+static const char *blup[] = { "backlight_up.sh", NULL };
+static const char *bldown[] = { "backlight_down.sh", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -120,9 +124,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volup   } },
-  { 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldown } },
-	{ 0,                            XF86XK_AudioMute,        spawn, {.v = volmute } },
+	{ 0,                            XF86XK_AudioRaiseVolume,  spawn, {.v = volup   } },
+  { 0,                            XF86XK_AudioLowerVolume,  spawn, {.v = voldown } },
+	{ 0,                            XF86XK_AudioMute,         spawn, {.v = volmute } },
+	{ 0,                            XF86XK_MonBrightnessUp,   spawn, {.v = blup   } },
+  { 0,                            XF86XK_MonBrightnessDown, spawn, {.v = bldown } },
 };
 
 /* button definitions */
