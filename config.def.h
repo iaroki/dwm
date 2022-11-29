@@ -62,6 +62,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 // #define MODKEY Mod4Mask // Super key
+#define SUPERKEY Mod4Mask // Super key
 #define MODKEY Mod1Mask // Alt key
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
@@ -94,7 +95,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+       { SUPERKEY,                     XK_j,      focusstack,     {.i = +1 } },
+       { SUPERKEY,                     XK_Tab,    focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+       { SUPERKEY,                     XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
